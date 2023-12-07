@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 docker-compose up -d;
-sleep 150s;
+sleep 80s;
