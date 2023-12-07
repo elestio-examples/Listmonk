@@ -31,4 +31,4 @@ services:
     depends_on:
       - db
     volumes:
-      - ./config.toml:/listmonk/config.toml
+      - ${folderName}/config.toml:/listmonk/config.toml
