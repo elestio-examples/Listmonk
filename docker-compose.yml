@@ -22,7 +22,7 @@ services:
   app:
     restart: unless-stopped
     image: listmonk/listmonk:latest
-    command: [sh, -c, "yes | ./listmonk --install --config config.toml && ./listmonk --config config.toml"]
+    command: [sh, -c, "yes | ./listmonk --install --config config.toml && ./listmonk && ./listmonk --upgrade --yes --config config.toml"]
     ports:
       - "172.17.0.1:9090:9000"
     environment:
